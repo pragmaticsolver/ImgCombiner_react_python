@@ -37,6 +37,7 @@ class App extends React.Component {
 		let body_url = $('#body_url').val();
 
 		const { data } = await axios('http://127.0.0.1:5000/image', {
+
 			method: 'POST',
 			data: {
 				head_url: head_url,
