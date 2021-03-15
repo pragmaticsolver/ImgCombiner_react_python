@@ -13,7 +13,7 @@ class App extends React.Component {
 		this.handleSubmit = this.handleSubmit.bind(this);
 
 		this.state = {
-			image_url: '../dist/images/init.png',
+			image_url: '../dist/images/origin/init.png',
 			submitBtn_status: false,
 			downloadBtn_status: false
 		}
@@ -36,7 +36,7 @@ class App extends React.Component {
 		let head_url = $('#head_url').val();
 		let body_url = $('#body_url').val();
 
-		const { data } = await axios('http://localhost:5000/image', {
+		const { data } = await axios('http://127.0.0.1:5000/image', {
 			method: 'POST',
 			data: {
 				head_url: head_url,
