@@ -1,0 +1,25 @@
+.app-container {
+    text-align: center;
+}
+.input-url {
+    width: 80%;
+    margin-left: 10%;
+}
+.input-url label {
+    float: left;
+}
+#content {
+    position: relative;
+    top: 2em;
+}
+.image-container {
+    padding: 2em;
+}
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-container button {
+    margin: 1em;
+}
